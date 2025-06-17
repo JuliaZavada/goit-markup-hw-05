@@ -486,24 +486,24 @@ section {
   border-radius: 4px;
   background-color: transparent;
   font-size: 12px;
-line-height: 2;
-letter-spacing: 0.04em;
-color: #fff;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
   padding-left: 16px;
   padding-right: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+}
 .footer-input::placeholder {
-color: #fff;
+  color: #fff;
 }
 .footer-btn {
   min-width: 165px;
-height: 40px;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-  border-radius: 4px;    
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
   background-color: #4d5ae5;
   fill: #fff;
   border: none;
@@ -528,7 +528,8 @@ cursor: pointer;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /*display: flex;
   align-items: center;
   justify-content: center;*/
@@ -550,7 +551,7 @@ cursor: pointer;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
 }
 .modal-close {
@@ -568,7 +569,8 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-close {
   fill: #2e2f42;
@@ -608,6 +610,7 @@ cursor: pointer;
 .modal-input {
   height: 40px;
   padding-left: 38px;
+  background-color: transparent;
 }
 .modal-input-text {
   font-size: 12px;
@@ -636,7 +639,7 @@ cursor: pointer;
   fill: #4d5ae5;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-user-coment {
+.modal-user-comment {
   margin-bottom: 16px;
 }
 .modal-textarea {
@@ -645,9 +648,10 @@ cursor: pointer;
   resize: none;
   padding: 8px 16px;
   font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-color: rgba(46, 47, 66, 0.4);
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border-color: transparent;
 }
 /*.modal-textarea::placeholder {
   font-size: 12px;
@@ -655,6 +659,9 @@ color: rgba(46, 47, 66, 0.4);
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }*/
+.modal-field {
+  margin-bottom: 24px;
+}
 .check-text {
   font-weight: 400;
   font-size: 12px;
@@ -671,10 +678,13 @@ color: rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-check:checked + .check-text .check-element {
   background-color: #404bbf;
@@ -694,8 +704,9 @@ color: rgba(46, 47, 66, 0.4);
 .modal-btn {
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
+  cursor: pointer;
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 500;
