@@ -581,10 +581,9 @@ section {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-ikon-close:hover,
-.modal-ikon-close:focus {
+.modal-close:hover > .modal-ikon-close,
+.modal-close:focus > .modal-ikon-close {
   fill: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
